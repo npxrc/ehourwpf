@@ -1,0 +1,36 @@
+﻿<Page x:Class="eHourWPF.RequestViewer"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:eHourWPF"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="750"
+      Title="RequestViewer">
+    <Grid Background="#6C717F">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Button x:Name="deleteRequestButton" Content="Delete Request" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12,12,0,0" Padding="10,5" Click="DeleteReq" Visibility="Collapsed"/>
+
+        <StackPanel Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0">
+            <TextBlock x:Name="eventNameLabel" Text="Loading" FontFamily="SF Pro Display" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center"/>
+            <TextBlock x:Name="reqdHrsLabel" Text="---" FontFamily="Rubik" FontSize="14" HorizontalAlignment="Center" Margin="0,10,0,0"/>
+            <TextBlock x:Name="dateSubtdLabel" Text="---" FontFamily="Rubik" FontSize="14" HorizontalAlignment="Center" Margin="0,5,0,0"/>
+        </StackPanel>
+
+        <TextBox x:Name="descriptionBox" Grid.Row="2" Margin="75,20" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" IsReadOnly="True" 
+                 Background="#6C717F" Foreground="Black" FontFamily="Rubik" FontSize="14" BorderThickness="0" Text="If it still says loading after a while, try using the back button on your mouse and re-opening the request."/>
+
+        <Border Grid.Row="3" Background="Transparent" Height="75">
+            <StackPanel x:Name="imgLoadingPanel" VerticalAlignment="Center">
+                <TextBlock Text="Image Loading is not supported" FontFamily="SF Pro Display" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center"/>
+                <TextBlock Text="but that's okay since you remember what you uploaded!" FontFamily="SF Pro Display" FontSize="12" HorizontalAlignment="Center" Margin="0,5,0,0"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Page>
