@@ -28,7 +28,7 @@ So you might've seen my other repository <a href="https://github.com/npxrc/ehour
 
 Okay, fine. To answer your first question, as a design student I want to make my app look somewhat good. Let's be honest, if you look below and compare the two, which looks better? That's what I thought.
 <br>
-<br>![Old app.](https://github.com/npxrc/ehourwpf/blob/master/README-Assets/old.jpg?raw=true)![New app.](https://github.com/npxrc/ehourwpf/blob/master/README-Assets/new.jpg?raw=true)
+<br>![Old app.](https://github.com/npxrc/ehourwpf/blob/master/README-Assets/old.png?raw=true)![New app.](https://github.com/npxrc/ehourwpf/blob/master/README-Assets/new.png?raw=true)
 <br>
 To answer the other question, you have to understand I don't know how to code C#. [If you had read my README on my profile](https://github.com/npxrc/npxrc/README.md), you would've known that I actually code in JavaScript most of the time! In theory I should know how to make a eHour submission page, I mean ChatGPT generated a perfectly flawless script that I haven't tested yet.
 <br>
