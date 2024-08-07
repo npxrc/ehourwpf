@@ -12,10 +12,27 @@
     FOR LEGAL REASONS I am required (probably not, it just adds some spice) to inform you that:<br>
     <ul>
         <li>Any misuse of either npxrc/ehourwinapp or npxrc/ehourwpf application(s) or package(s) is the Consumer/Consumers fault, and is not the responsibility of the Creator, npxrc.</li>
+        <li>The Creator (npxrc), is merely providing you a graphical interface similar to that of the Academy Endorsement Portal created by the Olathe School District. npxrc/ehourwinapp and npxrc/ehourwpf application(s) or package(s) are no different in terms of functionality compared to the Academy Endorsement Portal provided by the Olathe School District to high school students.</li>
+        <li>What does that mean? I'm trying to say that if you can DDoS or congest the Olathe School District portal through their website, then it is possible through my App and cannot be fixed unless they add a rate limiter.</li>
     </ul>
 </div>
 
 <hr>
+
+<div>
+    <h1>This app is NOT a virus or malware, read below</h1>
+    So you probably put the app into Windows Defender to see if it's a virus, which is fair. I'm just some nobody on GitHub making an app. Defender marks it as clear (at least as of 10:55 CST on 8/7/2024), but you're still sketched out, so you put it into VirusTotal, and find that Malwarebytes and MaxSecure flagged it as MachineLearning/Anomalous.100% and Trojan.Malware.300983.susgen. 
+    <br>
+    <img src="https://github.com/npxrc/ehourwpf/blob/master/README-Assets/notavirus.png?raw=true">
+    <br>
+    I want to tell you that both of those are NOT virus flags. Those are because MalwareBytes has never seen the file before (hence "Anomalous", meaning irregular), and MaxSecure is just flagging it heuristically, meaning that it thinks you should proceed with caution since it's not been seen before.
+    <br>
+    <br>
+    And besides, why would <b><i>I</i></b> want to steal your credentials, or give you a virus, if the code is literally open source. Exactly. I don't even know how to give you a virus even if I wanted to since I can't code C#, have you even seen any of the code? It's a dumpster fire. So with that aside, you can read the rest of the README.md.
+</div>
+<br>
+
+# actually useful info
 
 So you might've seen my other repository <a href="https://github.com/npxrc/ehourwinapp">at npxrc/ehourwinapp on GitHub,</a> and are probably wondering 2 things:
 - Why are you starting a new repo? And,
