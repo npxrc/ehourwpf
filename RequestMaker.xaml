@@ -7,7 +7,58 @@
       mc:Ignorable="d" 
       d:DesignHeight="500" d:DesignWidth="750"
       Title="RequestMaker">
-    <Grid>
-        
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+            <RowDefinition Height="Auto" MinHeight="93"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <!-- Title TextBox -->
+        <TextBox Name="TitleTextBox" 
+                 VerticalAlignment="Center" Height="32" />
+
+        <!-- Date Picker -->
+        <DatePicker Name="ActivityDatePicker"
+                    Grid.Row="1" 
+                    SelectedDateFormat="Short"
+                    DisplayDateStart="01/01/2019" 
+                    DisplayDateEnd="12/31/2040" 
+                    HorizontalAlignment="Stretch" Height="32"/>
+
+        <!-- Hours Input (Number Only) -->
+        <TextBox Name="HoursTextBox"
+                 Grid.Row="2"
+                 VerticalAlignment="Center"
+                 PreviewTextInput="HoursTextBox_PreviewTextInput"
+                 MaxLength="3" Height="32" />
+
+        <!-- Multiline Description TextBox -->
+        <TextBox Name="DescriptionTextBox"
+                 Grid.Row="3" 
+                 VerticalAlignment="Top"
+                 AcceptsReturn="True"
+                 TextWrapping="Wrap"
+                 Height="150"/>
+
+        <!-- Buttons -->
+        <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Center" Width="330">
+            <Button Content="Save Draft" 
+                    Click="SaveDraft_Click" 
+                    Margin="5" 
+                    Width="100"/>
+            <Button Content="Add Images" 
+                    Click="SelectImages_Click" 
+                    Margin="5" 
+                    Width="100"/>
+            <Button Content="Clear Form" 
+                    Click="ClearForm_Click" 
+                    Margin="5" 
+                    Width="100"/>
+        </StackPanel>
+        <Button Content="Submit" Grid.Row="5" VerticalAlignment="Top" HorizontalAlignment="Center" Click="Submit_Click"/>
     </Grid>
 </Page>

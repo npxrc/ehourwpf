@@ -7,7 +7,9 @@
         xmlns:muxc="clr-namespace:Windows.UI.Xaml.Controls;assembly=Windows.Foundation.UniversalApiContract"
         ui:WindowHelper.UseModernWindowStyle="True"
         mc:Ignorable="d"
-        Title="HourSync" Height="500" Width="750" WindowStartupLocation="CenterScreen" BorderBrush="Black" Icon="/ehours.png" FontFamily="SF Pro Display" FontSize="16" TabIndex="0">
+        Title="HourSync" Height="500" Width="750" WindowStartupLocation="CenterScreen" BorderBrush="Black" Icon="/ehours.png" FontFamily="SF Pro Display" FontSize="16" TabIndex="0"
+        MinHeight="420" MinWidth="569"
+        >
     <Window.Background>
         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
             <LinearGradientBrush.RelativeTransform>

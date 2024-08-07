@@ -117,7 +117,10 @@ namespace eHourWPF
 
         private void CreateRequest(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Creating eHour Requests is not supported yet.\r\nWe (I) know it's inconvenient, but I also don't know how to code C#.\r\nCheck back in a week or two!", ":(", MessageBoxButton.OK, MessageBoxImage.Error);
+            //MessageBox.Show("Creating eHour Requests is not supported yet.\r\nWe (I) know it's inconvenient, but I also don't know how to code C#.\r\nCheck back in a week or two!", ":(", MessageBoxButton.OK, MessageBoxImage.Error);
+            var mainWindow = (MainWindow)Application.Current.MainWindow;
+            RequestMaker requestMaker = new RequestMaker(phpSessionId, _cookieContainer, _handler, _client);
+            mainWindow.MainFrame.Navigate(requestMaker);
         }
     }
 

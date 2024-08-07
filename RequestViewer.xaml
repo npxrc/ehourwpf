@@ -7,7 +7,7 @@
       mc:Ignorable="d" 
       d:DesignHeight="500" d:DesignWidth="750"
       Title="RequestViewer">
-    <Grid Background="#6C717F">
+    <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
@@ -23,8 +23,7 @@
             <TextBlock x:Name="dateSubtdLabel" Text="---" FontFamily="Rubik" FontSize="14" HorizontalAlignment="Center" Margin="0,5,0,0"/>
         </StackPanel>
 
-        <TextBox x:Name="descriptionBox" Grid.Row="2" Margin="75,20" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" IsReadOnly="True" 
-                 Background="#6C717F" Foreground="Black" FontFamily="Rubik" FontSize="14" BorderThickness="0" Text="If it still says loading after a while, try using the back button on your mouse and re-opening the request."/>
+        <TextBox x:Name="descriptionBox" Grid.Row="2" Margin="75,20" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" IsReadOnly="True" Foreground="Black" FontFamily="Rubik" FontSize="14" BorderThickness="0" Text="If it still says loading after a while, try using the back button on your mouse and re-opening the request."/>
 
         <Border Grid.Row="3" Background="Transparent" Height="75">
             <StackPanel x:Name="imgLoadingPanel" VerticalAlignment="Center">
